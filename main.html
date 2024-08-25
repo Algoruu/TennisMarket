@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Main</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                text-align: center;
+                margin-top: 30px;
+                color: #2c3e50;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 20px;
+            }
+
+            .card {
+                background-color: white;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                margin: 15px;
+                padding: 20px;
+                text-align: center;
+                width: 200px;
+                transition: transform 0.3s;
+            }
+
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .card_img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+
+            .card_title {
+                font-size: 18px;
+                margin: 10px 0;
+                color: #2c3e50;
+            }
+
+            .card_button {
+                background-color: #3498db;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin-top: 10px;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            .card_button:hover {
+                background-color: #2980b9;
+            }
+
+            .link-container {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #3498db;
+                font-size: 18px;
+            }
+
+            a:hover {
+                color: #2c3e50;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tennis Market</h1>
+        <div class="link-container">
+            Welcome to Tennis Market! <br>
+            Enjoy your shopping.
+            <br><br>
+            <a href="./orderlist">Order List</a>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img class="card_img" src="./img/redRacket.png" alt="Red Racket">
+                <p class="card_title">Red Racket</p>
+                <input class="card_button" type="button" value="Order" onclick="location.href='/order?productId=1'">
+            </div>
+            <div class="card">
+                <img class="card_img" src="./img/blueRacket.png" alt="Blue Racket">
+                <p class="card_title">Blue Racket</p>
+                <input class="card_button" type="button" value="Order" onclick="location.href='/order?productId=2'">
+            </div>
+            <div class="card">
+                <img class="card_img" src="./img/blackRacket.png" alt="Black Racket">
+                <p class="card_title">Black Racket</p>
+                <input class="card_button" type="button" value="Order" onclick="location.href='/order?productId=3'">
+            </div>
+        </div>
+    </body>
+</html>
